@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Flag Drawing */
+
+.flag-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.green {
+  background-color: green;
+  margin-bottom: 100px;
+  height: 280px;
+  width: 550px;
+  position: relative;
+
+  /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.green-rounded-red {
+  background-color: red;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+.green-rounded-white {
+  background-color: white;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+/* Box Sizing */
+
+.box-sizing {
+  background-color: purple;
+  height: 700px;
+  width: 800px;
+  margin: auto;
+  gap: 15px;
+  margin-bottom: 200px;
+
+  /* using flex */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-box {
+  background-color: red;
+  height: 250px;
+  width: 300px;
+  box-sizing: content-box;
+  padding: 50px;
+}
+.border-box {
+  background-color: green;
+  height: 250px;
+  width: 300px;
+  box-sizing: border-box;
+}
