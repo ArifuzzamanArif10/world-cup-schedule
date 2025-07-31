@@ -15,6 +15,8 @@
 }
 .btn {
   background-color: #dd0000;
+  font-size: 20px;
+  font-weight: 500;
   border-radius: 5px;
   padding: 16px 25px 16px 25px;
   border: none;
@@ -53,4 +55,64 @@
 
 .banner-right img {
   display: block;
+}
+
+/* main section */
+
+.upcoming-matches {
+  display: flex;
+  gap: 55px;
+  padding: 50px 0;
+}
+.upcoming-matches-left {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  width: 25%;
+  gap: 20px;
+  padding: 30px 30px;
+  border-radius: 10px;
+  height: fit-content;
+}
+
+.upcoming-matches .btn:nth-child(1),
+.upcoming-matches .btn:nth-child(2) {
+  background-color: white;
+  color: black;
+}
+
+.upcoming-matches-right {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0px 56px;
+  /* gap: 56px; */
+}
+.upcoming-matches img {
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 20px;
+  height: 262px;
+  /* width: 312px; */
+  width: 100%;
+}
+
+.upcoming-matches .button-card {
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+.upcoming-matches .right-card {
+  display: flex;
+  gap: 41px;
+}
+
+.upcoming-matches .upcoming-matches-right .card-container {
+  padding-bottom: 50px;
+}
+
+.upcoming-matches .upcoming-matches-right h2 {
+  margin: 20px 0;
+  font-weight: 600;
+  font-size: 18px;
 }
